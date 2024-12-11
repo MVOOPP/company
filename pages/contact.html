@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">Скучная компания</div>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <div class="media">
+                        <a href="tel:+7(812)982-82-61" class="media1"><img src="../img/phone.svg" alt=""></a>
+                        <a href="mailto:hello@boringstroy.ru?subject=Привет, Скучная компания! Хотим сделать заказ." class="media1"><img src="../img/mail.svg" alt=""></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79052228261&text&type=phone_number&app_absent=0" class="media1"><img src="../img/whatsapp.svg" alt=""></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main style="position: relative; text-align: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.6392982093732!2d30.44425789663735!3d59.9547183102648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469632059e586e4b%3A0x480e74b3f095383a!2z0JjRgNC40L3QvtCy0YHQutC40Lkg0L_RgC4sIDIsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTUyNDg!5e0!3m2!1sru!2sru!4v1733920262630!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="non-interactive-map" >
+            
+        </iframe>
+        <div class="map-text">
+            <h2>Скучные на связи</h2>
+            <p>для заказа услуг и запроса КП:</p>
+            <a href="mailto:hello@boringstroy.ru">hello@boringstroy.ru</a>
+            <p>для поставщиков и ваших предложений о сотрудничестве: </p>
+            <a href="mailto:smart@boringstroy.ru">smart@boringstroy.ru</a>
+            <p>письмо самому Скучному: </p>
+            <a href="mailto:omg@boringstroy.ru">omg@boringstroy.ru</a>
+            <h2>Важно перед визитом</h2>
+            <p>Россия, Санкт-Петербург, Ириновский пр.2, </p>
+            <a href="tel:+78129828261">+7 (812) 982 82 61</a>
+        </div>
+        <button id="open-popup" class="popup-button">Оставить заявку</button>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <h2>Оставьте ваш номер телефона</h2>
+                    <p>Мы работаем с 9-18 часов и свяжемся с вами как можно быстрее</p>
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="tel" id="phone-input" placeholder="+7 (999) 999-99-99" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="name-input" placeholder="Ваше имя" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="task-input" placeholder="Коротко опишите задачу" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </form>
+                    <p class="privacy-text">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с 
+                        <a href="#">политикой конфиденциальности</a>.
+                    </p>
+                </div>
+            </div>
+    </main>
+      <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Сервисы</h3>
+                <ul>
+                    <li><a href="#">Ремонт офисов</a></li>
+                    <li><a href="#">Ремонт магазинов</a></li>
+                    <li><a href="#">Ремонт заведений</a></li>
+                    <li><a href="#">Ремонт спортивных клубов</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Сервисы</h3>
+                <ul>
+                    <li><a href="#">Ремонт медицинских помещений</a></li>
+                    <li><a href="#">Отделка помещений</a></li>
+                    <li><a href="#">Ремонт складских помещений</a></li>
+                    <li><a href="#">Укладка напольных покрытий</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Сервисы</h3>
+                <ul>
+                    <li><a href="#">Покраска помещений</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Скучная компания. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>

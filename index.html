@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скучная компания | Ремонт помещений</title>
+    <!-- Подключение AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Подключение Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">Скучная компания</div>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="pages/contact.html">Контакты</a></li>
+                    <div class="media">
+                        <a href="tel:+7(812)982-82-61" class="media1"><img src="img/phone.svg" alt=""></a>
+                        <a href="mailto:hello@boringstroy.ru?subject=Привет, Скучная компания! Хотим сделать заказ." class="media1"><img src="img/mail.svg" alt=""></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79052228261&text&type=phone_number&app_absent=0" class="media1"><img src="img/whatsapp.svg" alt=""></a>
+
+                    </div>
+
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <!-- Первая карточка с обычной анимацией -->
+            <div class="background bg1">
+                <h1 id="main-title" class="animate__animated animate__fadeInDown animate__repeat-1">Скучная компания</h1>
+                <p id="sub-title" class="animate__animated animate__fadeInUp">Ремонт и отделка - это к нам</p>
+                <a class="contact-button animate__animated animate__fadeInUp animate__delay-1s" href="pages/contact.html">Контакты</a>
+            </div>
+            <!-- Остальные карточки с анимацией при скролле -->
+            <div class="background bg2" data-aos="fade-up">
+                <h1>Ремонт офисов</h1>
+                <p>Косметический и комплексный</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg3" data-aos="fade-up" data-aos-delay="200">
+                <h1>Ремонт магазинов</h1>
+                <p>Маленьких и больших</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg4" data-aos="fade-up" data-aos-delay="200">
+                <h1>Ремонт заведений</h1>
+                <p>кафе, рестораны, кофейни, пекарни</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg5" data-aos="fade-up" data-aos-delay="200">
+                <h1>Ремонт спортивных <br> клубов</h1>
+                <p>в Санкт-Петербурге и области</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg6" data-aos="fade-up" data-aos-delay="200">
+                <h1>Ремонт медицинских <br> помещений</h1>
+                <p>частных и государственных</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg7" data-aos="fade-up" data-aos-delay="200">
+                <h1>Отделка помещений</h1>
+                <p>различного назначения</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg8" data-aos="fade-up" data-aos-delay="200">
+                <h1>Ремонт складских и <br> производственных помещений</h1>
+                <p>в Санкт-Петербурге и Лен. области. Выезжаем в другие регионы.</p>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg9" data-aos="fade-up" data-aos-delay="200">
+                <h1>Укладка напольных покрытий</h1>
+                <div class="info-icon">
+                    <i>i</i>
+                    <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                </div>
+                <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+            <div class="background bg10" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Покраска помещений</h1>
+                    <div class="info-icon">
+                        <i>i</i>
+                        <div class="info-tooltip">Дополнительная информация о ремонте офисов.</div>
+                    </div>
+                    <a class="contact-button" href="pages/contact.html">Контакты</a>
+            </div>
+
+            <!-- Форма заказа услуги -->
+            <button id="open-popup" class="popup-button">Оставить заявку</button>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <h2>Оставьте ваш номер телефона</h2>
+                    <p>Мы работаем с 9-18 часов и свяжемся с вами как можно быстрее</p>
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="tel" id="phone-input" placeholder="+7 (999) 999-99-99" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="name-input" placeholder="Ваше имя" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="task-input" placeholder="Коротко опишите задачу" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </form>
+                    <p class="privacy-text">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с 
+                        <a href="#">политикой конфиденциальности</a>.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Сервисы</h3>
+                <ul>
+                    <li><a href="#">Ремонт офисов</a></li>
+                    <li><a href="#">Ремонт магазинов</a></li>
+                    <li><a href="#">Ремонт заведений</a></li>
+                    <li><a href="#">Ремонт спортивных клубов</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Сервисы</h3>
+                <ul>
+                    <li><a href="#">Ремонт медицинских помещений</a></li>
+                    <li><a href="#">Отделка помещений</a></li>
+                    <li><a href="#">Ремонт складских помещений</a></li>
+                    <li><a href="#">Укладка напольных покрытий</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Сервисы</h3>
+                <ul>
+                    <li><a href="#">Покраска помещений</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Скучная компания. Все права защищены.
+        </div>
+    </footer>
+    
+    
+    <!-- Подключение AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init(); // Инициализация AOS
+        });
+    </script>
+</body>
+</html>
